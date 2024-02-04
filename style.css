@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: darkblue;
+  color: white;
+  height: 80px;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.mode1 {
+  display: flex;
+  justify-content: end;
+  border: none;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+#mode {
+  font-size: 25px;
+  border: 2px solid grey;
+  border-radius: 60px;
+  background-color: transparent;
+}
+
+#mode:hover {
+  cursor: pointer;
+  background-color: darkblue;
+  color: white;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.choices {
+  margin-bottom: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+}
+
+.choice {
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: transparent;
+  color: white;
+}
+
+.symbols {
+  border: 2px solid grey;
+  font-size: 100px;
+  border-radius: 50%;
+  background-color: cyan;
+}
+
+.choice:hover {
+  background-color: darkblue;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+  padding: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.score {
+  font-size: 30px;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+}
+
+#userScore,
+#compScore {
+  font-size: 80px;
+}
+
+.msg-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+#msg {
+  font-size: 30px;
+  border-radius: 20px;
+  border: 2px solid grey;
+  padding: 10px;
+  color: white;
+  background-color: darkblue;
+}
