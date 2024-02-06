@@ -1,41 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Rock Paper Scissors Game</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Rock Paper Scissors</h1>
-    <div class="mode1">
-        <button id="mode">💡</button>
-    </div>
-    <div class="choices">
-        <div class="choice" id="rock">
-            <button class="symbols">✊</button>
-        </div>
-        <div class="choice" id="paper">
-            <button class="symbols">🤚</button>
-        </div>
-        <div class="choice" id="scissors">
-            <button class="symbols">✌️</button>
-        </div>
-    </div>
 
-    <div class="score-board">
-        <div class="score">
-        <p id="userScore">0</p>
-        <p>Player</p>
+    <div class="container">
+      <div class="mode1">
+        <button id="reset">🔙</button>
+        <button id="mode">💡</button>
+      </div>
+      <div class="row">
+        <div class="choices">
+          <div class="col">
+            <label for="Player1" id="Player">Player</label>
+            <div class="playerChoice" id="rock">
+              <button class="symbols" style="--clr: #fefcfb">✊</button>
+            </div>
+            <div class="playerChoice" id="paper">
+              <button class="symbols" style="--clr: #fefcfb">🤚</button>
+            </div>
+            <div class="playerChoice" id="scissors">
+              <button class="symbols" style="--clr: #fefcfb">✌️</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="score-board">
+              <div class="score">
+                <p id="userScore">0</p>
+                <p id="text">Player</p>
+              </div>
+              <div class="score">
+                <p id="compScore">0</p>
+                <p id="text1">Computer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <label for="Player2" id="Computer">Computer</label>
+            <div class="compChoice" id="rock">
+              <button class="symbols" style="--clr: #fefcfb">✊</button>
+            </div>
+            <div class="compChoice" id="paper">
+              <button class="symbols" style="--clr: #fefcfb">🤚</button>
+            </div>
+            <div class="compChoice" id="scissors">
+              <button class="symbols" style="--clr: #fefcfb">✌️</button>
+            </div>
+          </div>
         </div>
-        <div class="score">
-            <p id="compScore">0</p>
-            <p>Computer</p>
+      </div>
+
+      <div class="msg-container">
+        <p id="msg" style="-clr: #07c637">Make your move</p>
+      </div>
+    </div>
+    <footer class="fixed-bottom">
+        <div class="hor">
+          <div class="ver">
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/adityaptl07/"
+              target="_blank"
+              ><i
+                class="fa-brands fa-linkedin-in fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
+          </div>
+          <div class="ver">
+            <a
+              class="link"
+              href="https://instagram.com/adityaptl_07/"
+              target="_blank"
+              ><i
+                class="fa-brands fa-instagram fa-2xl"
+                style="color: #ffffff"
+              ></i
+            ></a>
+          </div>
+          <div class="ver">
+            <a
+              class="link"
+              href="https://github.com/AdityaPtl07/"
+              target="_blank"
+              ><i class="fa-brands fa-github fa-2xl" style="color: #e6dede"></i
+            ></a>
+          </div>
         </div>
-    </div>
-    <div class="msg-container">
-        <p id="msg">Make your move</p>
-    </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d3e03d0e96.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
